@@ -1,0 +1,21 @@
+#playmode-dropdown{
+    max-width: 100px;
+    min-width: 100px;
+    margin-left: 0px;
+    margin-right: 2px;
+}
+
+.unity-editor-toolbar-element__label{
+    -unity-text-align: middle-left;
+    padding-left: 4px;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 8px;
+}
+
+.unity-editor-toolbar-element__icon{
+    min-height: 16px;
+    min-width: 16px;
+}

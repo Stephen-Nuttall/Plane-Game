@@ -1,0 +1,21 @@
+restore_saved_layout = true
+top_view =                 { class_name = "TopView" size = 30 }
+view = {
+horizontal = true
+            children = [
+{
+tabs = true
+size = 0.5
+            children = [
+                { class_name = "SceneHierarchyWindow" }
+            ]
+}
+{
+tabs = true
+size = 0.5
+            children = [
+                { class_name = "SceneView" }
+            ]
+}
+            ]
+}

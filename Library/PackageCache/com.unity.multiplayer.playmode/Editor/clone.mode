@@ -1,0 +1,174 @@
+com.unity.mppm.clone = {
+
+    label = "Multiplayer Playmode Clone"
+
+    menus = [
+        {
+            name = "Edit"
+            children = [
+                { name = "Undo" }
+                { name = "Redo" }
+                null
+                { name = "Select All" }
+                { name = "Deselect All" }
+                { name = "Select Children" }
+                { name = "Select Prefab Root" }
+                { name = "Invert Selection" }
+                null
+                { name = "Cut" }
+                { name = "Copy" }
+                { name = "Paste" }
+                { name = "Paste As Child" }
+                null
+                { name = "Duplicate" }
+                { name = "Rename" }
+                { name = "Delete" }
+                null
+                { name = "Frame Selected" }
+                { name = "Lock View to Selected" }
+                null
+                { name = "Find" }
+            ]
+        }
+        {
+            name = "Assets"
+            children = [
+                { name = "Open C# Project" }
+            ]
+        }
+        {
+            name = "GameObject"
+            children = [
+                { name = "Create Empty" }
+                { name = "Create Empty Child" }
+                { name = "Create Empty Parent" }
+                {
+                    name = "3D Object"
+                    children = [
+                        { name = "Cube" }
+                        { name = "Sphere" }
+                        { name = "Capsule" }
+                        { name = "Cylinder" }
+                        { name = "Plane" }
+                        { name = "Quad" }
+                        null
+                        { name = "Text - TextMeshPro" }
+                        {
+                            name = "Legacy"
+                            children = [
+                                { name = "TextMesh" }
+                                { name = "BUTTTTS" }
+                            ]
+                        }
+                        null
+                        { name = "Ragdoll..." }
+                        null
+                        { name = "Terrain" }
+                        { name = "Tree" }
+                        { name = "Wind Zone" }
+                    ]
+                }
+                {
+                    name = "Effects"
+                    children = [
+                        { name = "Particle System" }
+                        { name = "Particle System Force Field" }
+                        { name = "Trail" }
+                        { name = "Line" }
+                    ]
+                }
+                {
+                    name = "Light"
+                    children = [
+                        { name = "Directional Light" }
+                        { name = "Point Light" }
+                        { name = "Spotlight" }
+                        { name = "Area Light" }
+                        null
+                        { name = "Reflection Probe" }
+                        { name = "Light Probe Group" }
+                    ]
+                }
+                {
+                    name = "Audio"
+                    children = [
+                        { name = "Audio Source" }
+                        { name = "Audio Reverb Zone" }
+                    ]
+                }
+                {
+                    name = "Video"
+                    children = [
+                        { name = "Video Player" }
+                    ]
+                }
+                {
+                    name = "UI"
+                    children = [
+                        { name = "Image" }
+                        { name = "Text - TextMeshPro" }
+                        { name = "Raw Image" }
+                        { name = "Panel" }
+                        null
+                        { name = "Toggle" }
+                        { name = "Slider" }
+                        { name = "Scrollbar" }
+                        { name = "Scroll View" }
+                        { name = "Button - TextMeshPro" }
+                        { name = "Dropdown - TextMeshPro" }
+                        { name = "Input Field - TextMeshPro" }
+                        null
+                        { name = "Canvas" }
+                        { name = "Event System" }
+                        null
+                        {
+                            name = "Legacy"
+                            children = [
+                                { name = "Text" }
+                                { name = "Button" }
+                                { name = "Dropdown" }
+                                { name = "Input Field" }
+                            ]
+                        }
+                    ]
+                }
+                {
+                    name = "UI Toolkit"
+                    children = [
+                        { name = "UI Document" }
+                    ]
+                }
+                { name = "Camera" }
+                { name = "Visual Scripting Scene Variables" }
+                null
+                { name = "Center on Children" }
+                null
+                { name = "Make Parent" }
+                { name = "Clear Parent" }
+                null
+                { name = "Set as last sibling" }
+                { name = "Set as first sibling" }
+                { name = "Align With View" }
+                { name = "Move To View" }
+                { name = "Toggle Active State" }
+                { name = "Align View To Selected" }
+            ]
+        }
+    ]
+
+    capabilities = {
+        game_view_toolbar = true
+        layout_switching = true
+        layout_window_menu = false
+        playbar = false
+        host_view_generic_menu = false
+        status_bar_extra_features = false
+        remember = false
+        search_popup_button = false
+        static_tabs = true
+    }
+
+    execute_handlers = {
+        inspector_read_only = "Commands/No Add Component"
+    }
+}

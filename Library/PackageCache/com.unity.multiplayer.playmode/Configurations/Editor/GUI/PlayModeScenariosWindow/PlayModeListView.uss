@@ -1,0 +1,29 @@
+.icon-config{
+    background-image: var(--icon-configuration);
+}
+
+#playmode-list-view{
+    height: 100%;
+    padding-top: 4px;
+}
+
+#playmode-list-view > ListView{
+    height: 100%;
+}
+
+.playmode-list-item:checked {
+    background-color: var(--unity-colors-highlight-background);
+}
+
+#plus-button{
+    width: 28px;
+    height: 22px;
+    min-height: 100%;
+    -unity-text-align: middle-center;
+    font-size: 24px;
+    background-color: var(--unity-colors-window-background);
+}
+
+#plus-button:hover{
+    background-color: var(--unity-colors-button-background-hover);
+}

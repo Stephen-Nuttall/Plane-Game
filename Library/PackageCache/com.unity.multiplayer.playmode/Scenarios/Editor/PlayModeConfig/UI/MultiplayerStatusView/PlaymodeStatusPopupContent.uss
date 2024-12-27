@@ -1,0 +1,92 @@
+@import url("../icons.uss");
+#status-list{
+}
+
+#headline{
+    -unity-font-style: bold;
+    opacity: 0.75;
+}
+
+.headline-container{
+    margin: 8px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--unity-colors-default-border);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#headline, #status-icon{
+    margin-right: 10px;
+}
+
+.instance-view{
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+#instance-name-container{
+    flex-direction: row;
+}
+
+#instance-name{
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#instance-icon{
+    margin-right: 3px;
+}
+
+#status-container{
+    min-width: 84px;
+    align-self: flex-end;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#status-container > #status-indicator{
+    margin-right: 3px;
+}
+
+.idle #status-indicator{
+    background-image: var(--icon-idle);
+
+}
+.error #status-indicator{
+    background-image: var(--icon-error);
+}
+.active #status-indicator{
+    background-image: var(--icon-running);
+}
+.loading #status-indicator{
+    background-image: var(--icon-loading);
+}
+
+#status-container > Label{
+    text-overflow: ellipsis;
+    align-self: flex-start;
+    -unity-text-align: middle-left;
+}
+
+.dashboard-link{
+    position: absolute;
+    right:0px;
+    background-image: var(--icon-dashboard);
+
+}
+
+.status-icon {
+    width: 20px;
+    height: 20px;
+    background-image: var(--icon-window);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px 14px;
+}

@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="WindowLayoutPopout.uss"/>
+    <ui:VisualElement name="Container">
+        <ui:Toggle label="Console" name="Console" class="popup_toggle" />
+        <ui:Toggle label="Game" name="Game" class="popup_toggle" />
+        <ui:Toggle label="Hierarchy" name="Hierarchy" class="popup_toggle" />
+        <ui:Toggle label="Inspector" name="Inspector" class="popup_toggle" />
+        <ui:Toggle label="Scene" name="Scene" class="popup_toggle" />
+        <ui:Toggle label="Playmode Tools" name="PlaymodeTools" class="popup_toggle" style="display: none;" />
+        <ui:Button text="Apply" display-tooltip-when-elided="true" name="Apply" />
+    </ui:VisualElement>
+</ui:UXML>

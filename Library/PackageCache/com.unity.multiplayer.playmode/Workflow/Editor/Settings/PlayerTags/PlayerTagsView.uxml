@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="PlayerTagsView.uss"/>
+    <ui:Label text="Player Tags" class="header" display-tooltip-when-elided="true" />
+    <ui:ListView name="PlayerTagsList" fixed-item-height="24" show-alternating-row-backgrounds="None" show-bound-collection-size="false" />
+    <ui:VisualElement name="TagButtons" class="unity-list-view__footer">
+        <ui:Button text="-" name="RemoveTagButton" class="tag-button" />
+        <ui:Button text="+" name="AddTagButton" class="tag-button" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,21 @@
+{
+    "name": "Unity.Multiplayer.PlayMode.Scenarios.Debugging.Editor",
+    "rootNamespace": "Unity.Multiplayer.PlayMode.Scenarios.Debugging.Editor",
+    "references": [
+        "GUID:af1260f2d07ba5142a368b77dac32101",
+        "GUID:36bacdfdc5c1e4c2f97e1b6168f2cf8b"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_MULTIPLAYER_PLAYMODE_DEBUGGING"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

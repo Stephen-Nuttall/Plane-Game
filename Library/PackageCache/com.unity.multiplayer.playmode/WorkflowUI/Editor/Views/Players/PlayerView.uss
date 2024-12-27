@@ -1,0 +1,201 @@
+#PlayerViewContent {
+    margin-top: 8px;
+}
+
+#PlayerViewHeader {
+    flex-direction: row;
+}
+
+#LogAndEllipseContainer {
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+}
+
+#PlayerViewHeader #NameToggle {
+    flex-direction: row-reverse;
+    min-width: 150px;
+}
+
+.unity-disabled {
+    opacity: 1;
+}
+
+.unity-disabled .unity-toggle__checkmark {
+    opacity: 0.5;
+}
+
+#PlayerControlsContainer {
+    padding-left: 20px;
+}
+
+#PlayerTagPills {
+    align-self: flex-start;
+    padding-left: 132px;
+}
+
+.player-tag-dropdown {
+    border-left-width: 10px;
+    flex-grow: 1;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+.player-tag-dropdown .unity-label {
+    padding-left: 11px;
+}
+
+#PlayerTagDropdown .unity-base-popup-field__text {
+    opacity: 0.5;
+}
+
+#unity-content {
+    background-color: rgb(51, 51, 51);
+}
+
+.unity-popup-field_input{
+    justify-content: space-between;
+}
+
+.active {
+    border-width: 2px;
+    color: var(--unity-colors-default-text);
+}
+
+.inactive {
+    border-width: 2px;
+    color: var(--unity-colors-default-text);
+}
+
+#LogFilters {
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 2px 0 2px 8px;
+}
+
+#LogInfoIcon {
+    background-image: var(--unity-icons-console_entry_info_small);
+}
+
+#LogWarningIcon {
+    background-image: var(--unity-icons-console_entry_warn_small);
+}
+
+#LogErrorIcon {
+    background-image: var(--unity-icons-console_entry_error_small);
+}
+
+.ellipse-icon {
+    margin: auto;
+
+    width: 16px;
+    height: 16px;
+}
+.ellipse-icon:hover {
+    background-color: dimgray;
+ }
+
+.log-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 6px;
+}
+
+.filter-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.main-editor-player #LogFilters {
+    display: none;
+}
+
+.innerSpinner {
+    margin: auto 8px;
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    left: -8px;
+    top: -8px;
+}
+
+.editorIcon {
+    margin: auto;
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    left: 4px;
+}
+
+#ActivatingText {
+    display: none;
+    margin: auto 0;
+}
+
+#ActivatingIndicator {
+    display: none;
+    margin: auto 8px;
+    width: 22px;
+}
+
+#ActiveIndicatorContainer {
+    display: flex;
+}
+
+.activating #ActivatingIndicator {
+    display: flex;
+}
+
+.activating #ActiveIndicatorContainer {
+    display: none;
+}
+
+#ActiveText {
+    flex-shrink: 1;
+    margin: auto 0;
+    font-size: var(--unity-metrics-default-font_small_size);
+}
+
+.activating #ActiveText {
+    display: flex;
+}
+
+.running #ActivatingIndicator {
+    display: none;
+}
+
+.running #ActiveIndicatorContainer {
+    display: flex;
+}
+
+.running #ActiveText {
+    display: flex;
+}
+
+#StatusContainer {
+    min-width: 56px;
+    flex-direction: row;
+}
+
+#Dot {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 4px;
+}
+
+.dotgray #Dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+}
+
+.dotgreen #Dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+}

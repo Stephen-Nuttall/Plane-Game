@@ -31,6 +31,14 @@
       "version": "1.0.2",
       "source": "builtin"
     },
+    "com.unity.inputsystem@1.11.2": {
+      "name": "com.unity.inputsystem",
+      "resolvedPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Library\\PackageCache\\com.unity.inputsystem",
+      "fingerprint": "3c4a97c3950fef77960981e0fe90613de6e512ee",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "1.11.2",
+      "source": "registry"
+    },
     "com.unity.multiplayer.center@1.0.0": {
       "name": "com.unity.multiplayer.center",
       "resolvedPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Library\\PackageCache\\com.unity.multiplayer.center",
@@ -38,6 +46,14 @@
       "editorCompatibility": "6000.0.0a1",
       "version": "1.0.0",
       "source": "builtin"
+    },
+    "com.unity.multiplayer.playmode@1.3.3": {
+      "name": "com.unity.multiplayer.playmode",
+      "resolvedPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Library\\PackageCache\\com.unity.multiplayer.playmode",
+      "fingerprint": "7f4b34d911b742add04987f7f0561fec9ff9c189",
+      "editorCompatibility": "6000.0.22f1",
+      "version": "1.3.3",
+      "source": "registry"
     },
     "com.unity.timeline@1.8.7": {
       "name": "com.unity.timeline",
@@ -266,6 +282,14 @@
       "resolvedPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Library\\PackageCache\\com.unity.modules.hierarchycore",
       "version": "1.0.0",
       "source": "builtin"
+    },
+    "com.unity.nuget.newtonsoft-json@3.2.1": {
+      "name": "com.unity.nuget.newtonsoft-json",
+      "resolvedPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Library\\PackageCache\\com.unity.nuget.newtonsoft-json",
+      "fingerprint": "74deb55db2a0c29ddfda576608bcb86abbd13ee6",
+      "editorCompatibility": "2018.4.0a1",
+      "version": "3.2.1",
+      "source": "registry"
     },
     "com.unity.ide.visualstudio@2.0.22": {
       "name": "com.unity.ide.visualstudio",

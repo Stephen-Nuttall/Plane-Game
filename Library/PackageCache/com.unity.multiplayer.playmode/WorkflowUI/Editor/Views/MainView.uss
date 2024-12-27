@@ -1,0 +1,60 @@
+MainView {
+    font-size: 11.5px;
+    margin: 6px;
+    padding-right: 10px;
+}
+
+#ScrollView {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 20;
+}
+.spacer {
+    margin-top: -9px;
+}
+
+.header {
+    -unity-font-style: bold;
+    padding: 0 0 4px 4px;
+}
+
+#ReadOnlyLabel {
+    padding-left: 4px;
+}
+
+#BuildErrorMessage {
+    display: none;
+}
+
+.hasCompileErrors #BuildErrorMessage {
+    display: flex;
+}
+
+#NoMPPMMessage {
+    display: none;
+}
+
+.hasMPPMDisabled #NoMPPMMessage {
+    display: flex;
+}
+
+#BuildErrorMessage2 {
+    display: none;
+}
+
+#PlayerLaunchingHelpBox{
+    display:none;
+}
+
+.hasPlayerLaunching #PlayerLaunchingHelpBox{
+    display:flex;
+}
+
+#seperator {
+    background-color: var(--unity-colors-inspector_titlebar-border_accent);
+    min-height: 1px;
+    max-height: 1px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}

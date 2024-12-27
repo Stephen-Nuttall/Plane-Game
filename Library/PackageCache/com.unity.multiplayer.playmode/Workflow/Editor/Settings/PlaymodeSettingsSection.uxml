@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="PlaymodeSettingsSection.uss"/>
+    <ui:ScrollView name="ScrollView">
+    </ui:ScrollView>
+</ui:UXML>

@@ -1,0 +1,27 @@
+#PlayerTagsList .unity-list-view__item {
+    -unity-text-align: middle-left;
+    padding: 0px 10px;
+    height: 24px;
+}
+
+#PlayerTagsList {
+    margin-top: 8px;
+    background-color: var(--unity-colors-dropdown-background);
+    border-color: var(--unity-colors-toolbar-border);
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 4px 0;
+}
+
+#TagButtons {
+    border-color: var(--unity-colors-toolbar-border);
+    background-color: var(--unity-colors-dropdown-background);
+}
+
+.tag-button {
+    background-color: var(--unity-colors-dropdown-background);
+}
+
+.tag-button:hover {
+    background-color: var(--unity-colors-dropdown-background-hover);
+}

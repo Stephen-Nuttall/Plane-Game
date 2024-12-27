@@ -1,0 +1,16 @@
+using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("Unity.Multiplayer.PlayMode.Configurations.Editor")]
+[assembly: InternalsVisibleTo("Unity.Multiplayer.PlayMode.Scenarios.Editor")]
+[assembly: InternalsVisibleTo("Unity.Multiplayer.PlayMode.Scenarios.Editor.Authoring")]
+[assembly: InternalsVisibleTo("Unity.Multiplayer.PlayMode.Scenarios.Editor.Data")]
+[assembly: InternalsVisibleTo("Unity.Multiplayer.PlayMode.Scenarios.Editor.Nodes.Multiplay")]
+[assembly: InternalsVisibleTo("Unity.Multiplayer.PlayMode.Scenarios.Editor.Views")]
+[assembly: InternalsVisibleTo("Unity.Multiplayer.PlayMode.Scenarios.Tests.Editor")]
+[assembly: InternalsVisibleTo("Unity.Multiplayer.Playmode.Common.Editor.Tests")]
+[assembly: InternalsVisibleTo("Unity.Multiplayer.Playmode.VirtualProjects.Editor")]
+[assembly: InternalsVisibleTo("Unity.Multiplayer.Playmode.VirtualProjects.Editor.Tests")]
+[assembly: InternalsVisibleTo("Unity.Multiplayer.Playmode.Workflow.Editor")]
+[assembly: InternalsVisibleTo("Unity.Multiplayer.Playmode.Workflow.Editor.Tests")]
+[assembly: InternalsVisibleTo("Unity.Multiplayer.Playmode.WorkflowUI.Editor")]
+[assembly: InternalsVisibleTo("Unity.Multiplayer.Workflows.IntegrationTests.PlayMode.Editor")]

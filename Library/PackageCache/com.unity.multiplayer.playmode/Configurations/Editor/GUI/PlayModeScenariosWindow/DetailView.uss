@@ -1,0 +1,13 @@
+#root-container > #unity-content-and-vertical-scroll-container >  #unity-content-viewport{
+    padding: 8px;
+}
+
+#no-config-selected-view{
+    padding-top: 4px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--unity-colors-window-background);
+    -unity-text-align: middle-center;
+
+}

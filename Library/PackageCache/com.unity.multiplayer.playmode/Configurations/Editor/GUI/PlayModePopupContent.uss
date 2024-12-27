@@ -1,0 +1,58 @@
+
+ListView {
+    margin: 4px;
+    margin-bottom: 24px;
+}
+
+/* list Item styles, order is important */
+.playmode-list-item {
+    border-top-color: var(--unity-window-background);
+    border-top-width: 4px;
+}
+
+#warn-icon {
+    position: absolute;
+    right: 4px;
+    display: none;
+}
+
+.playmode-list-item:checked {
+    background-color: var(--unity-colors-highlight-background);
+}
+
+.playmode-list-item Image {
+    max-width: 16px;
+    max-height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+.playmode-list-item Label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 16px;
+}
+
+.has-warning #warn-icon{
+    display: flex;
+}
+
+.has-warning Label{
+    margin-right: 36px;
+}
+
+
+#manage-playmode-scenarios-configs-button {
+    position: absolute;
+    width: 100%;
+    padding:4px;
+    bottom: 0px;
+    border-top-width: 1px;
+    border-top-color: grey;
+    -unity-text-align: middle-left;
+    min-height: 20px;
+}
+
+#manage-playmode-scenarios-configs-button:hover {
+    background-color: var(--unity-colors-button-background-hover_pressed);
+}

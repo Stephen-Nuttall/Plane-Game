@@ -1,0 +1,44 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="PlayerView.uss" />
+    <ui:VisualElement name="PlayerViewContent">
+        <ui:VisualElement name="PlayerViewHeader">
+            <ui:Toggle name="NameToggle" />
+            <ui:VisualElement name="StatusContainer">
+                <ui:VisualElement name="ActiveIndicatorContainer">
+                    <ui:VisualElement class="dot" name="Dot" />
+                </ui:VisualElement>
+                <Unity.Multiplayer.Playmode.WorkflowUI.Editor.LoadingSpinner name="ActivatingIndicator" />
+                <ui:Label name="ActiveText" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1" />
+            <ui:VisualElement name="LogAndEllipseContainer">
+                <ui:VisualElement name="LogFilters">
+                    <ui:VisualElement class="log-filter">
+                        <ui:Image name="LogInfoIcon" class="filter-icon" />
+                        <ui:Label name="LogInfoText" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="log-filter">
+                        <ui:Image name="LogWarningIcon" class="filter-icon" />
+                        <ui:Label name="LogWarningText" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="log-filter">
+                        <ui:Image name="LogErrorIcon" class="filter-icon" />
+                        <ui:Label name="LogErrorText" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="EllipsesContainer" />
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+        <ui:VisualElement name="PlayerControlsContainer">
+            <ui:VisualElement class="player-tag-container">
+                <ui:DropdownField name="MultiplayerRolesDropdown" class="player-tag-dropdown" label="Multiplayer Role" />
+            </ui:VisualElement>
+            <ui:VisualElement class="player-tag-container">
+                <ui:DropdownField name="PlayerTagDropdown" class="player-tag-dropdown" label="Tags" />
+                <ui:VisualElement name="PlayerTagPills" style="flex-direction: row; flex-wrap: wrap">
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

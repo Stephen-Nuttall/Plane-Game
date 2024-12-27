@@ -1,0 +1,67 @@
+#warn-icon{
+    min-height: var(--base-height);
+    min-width: var(--base-height);
+    margin-right: 4px;
+}
+
+.label-with-icon{
+  --base-height: 16px;
+  --base-icon-size: 16px;
+  --color-extralight-grey: #f2f2f2;
+  --color-selection: var(--unity-colors-highlight-background);
+  --color-warning: red;
+}
+
+.label-with-icon{
+    padding-left: 8px;
+  flex-direction: row;
+  height: var(--base-height);
+  min-height: var(--base-height);
+  max-height: var(--base-height);
+}
+.label-with-icon > #icon-container{
+  width: var(--base-height);
+  height: var(--base-height);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.label-with-icon > #icon-container > #icon {
+  width: var(--base-icon-size);
+  height: var(--base-icon-size);
+}
+.label-with-icon > #text-container{
+  width: 100%;
+  justify-content: center;
+}
+.label-with-icon > #text-container #text-input{
+  position: absolute;
+  width: 100%;
+  left: -4px;
+  display: none;
+}
+.label-with-icon > #text-container #label{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-self: flex-start;
+  -unity-text-align: middle-left;
+}
+.label-with-icon:hover, .label-with-icon--style:hover, .label-with-icon--component:hover, .label-with-icon--data:hover {
+  background-color: var(--unity-colors-highlight-background-hover-lighter);
+}
+.label-with-icon:focus, .label-with-icon--style:focus, .label-with-icon--component:focus, .label-with-icon--data:focus {
+  background-color: var(--unity-colors-highlight-background-hover-lighter);
+}
+.label-with-icon:checked, .label-with-icon--style:checked, .label-with-icon--component:checked, .label-with-icon--data:checked {
+  background-color: var(--color-selection);
+}
+
+
+.editable > #text-container #text-input {
+  display: flex;
+}
+
+.input-warning #text-input {
+  border-width: 1px;
+  border-color: var(--color-warning);
+}

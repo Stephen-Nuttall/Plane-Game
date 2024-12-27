@@ -1,0 +1,22 @@
+/* USS to make icons available to other stylesheets
+   use @import url("./icons.uss");
+   See MultiplayerPlayModeStatusButton.uss for reference
+*/
+
+:root {
+    --icon-running: url('Icons/CompletedTask.png');
+    --icon-deploy: url('Icons/Deployment.png');
+    --icon-idle: url('Icons/Idle.png');
+    --icon-error: url('Icons/Error.png');
+    --icon-ready: url('Icons/Ready.png');
+    --icon-loading: url('Icons/Loading.png');
+    --icon-dashboard: url('Icons/dashboard.png');
+    --icon-window: url('Icons/d_WindowInstance@2x.png');
+}
+
+.icon{
+    min-height: 16px;
+    min-width: 16px;
+    max-height: 16px;
+    max-width: 16px;
+}

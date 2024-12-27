@@ -1,0 +1,14 @@
+{
+    "name": "Unity.Multiplayer.Playmode.Common.Runtime",
+    "rootNamespace": "Unity.Multiplayer.PlayMode.Common.Runtime",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

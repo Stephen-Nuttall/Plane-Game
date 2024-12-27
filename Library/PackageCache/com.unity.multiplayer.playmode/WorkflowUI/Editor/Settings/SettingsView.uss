@@ -1,0 +1,15 @@
+.title {
+    font-size: 19px;
+    -unity-font-style: bold;
+    padding-top: 0;
+    margin: 2px 4px;
+}
+
+.unity-toggle__label {
+    min-width: 200px;
+}
+
+#MppmSettingsContainer {
+    margin-top: 9px;
+    margin-left: 2px;
+}

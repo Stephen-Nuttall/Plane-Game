@@ -1,0 +1,23 @@
+{
+    "name": "Unity.Multiplayer.PlayMode.Configurations.Editor",
+    "rootNamespace": "Unity.Multiplayer.PlayMode.Configurations.Editor",
+    "references": [
+        "Unity.DedicatedServer.Editor",
+        "Unity.DedicatedServer.Experimental.Common",
+        "Unity.Multiplayer.Playmode.Common.Editor",
+        "Unity.Multiplayer.PlayMode.Editor.Bridge"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "!DISABLE_DEDICATED_SERVER_EXPERIMENTAL"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

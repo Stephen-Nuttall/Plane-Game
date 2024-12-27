@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="SettingsView.uss" />
+    <ui:Label text="Multiplayer Play Mode" class="title" />
+    <ui:VisualElement name="MppmSettingsContainer">
+        <ui:Toggle name="IsMppmActiveToggle" label="Enable Multiplayer Play Mode"
+                   tooltip="Multiplayer Play Mode will initialize other editor instances to test multiplayer locally" />
+        <ui:Toggle name="ShowLaunchScreenToggle" label="Show Launch Screen"
+                   tooltip="Show the launch screen when launching virtual players" />
+        <ui:Toggle name="MutePlayersToggle" label="Mute Players"
+                   tooltip="Mutes the audio of active virtual player windows" />
+        <ui:IntegerField name="AssetDatabaseRefreshTimeoutSlider" label="Asset Database Refresh Timeout (Seconds)"
+                         low-value="30" high-value="300"
+                         tooltip="The time (in seconds) a virtual player has to complete an Asset Database refresh before timeout. Use the slider to increase or decrease this value. Timeout has a minimum value of 30 seconds and a maximum value of 300 seconds" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="NewTagDialogueView.uss"/>
+    <ui:TextField name="TagField" label="New Player Tag"/>
+    <ui:VisualElement name="ButtonContainer">
+        <ui:Button name="SaveButton" text="Save"/>
+        <ui:Button name="CancelButton" text="Cancel"/>
+    </ui:VisualElement>
+</ui:UXML>

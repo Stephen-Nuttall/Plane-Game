@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="label-with-icon" class="label-with-icon">
+        <ui:VisualElement name="icon-container">
+            <ui:VisualElement name="icon" />
+        </ui:VisualElement>
+        <ui:VisualElement name="text-container">
+            <ui:Label text="label" focusable="false" display-tooltip-when-elided="true" name="label" />
+            <ui:TextField name="text-input" picking-mode="Ignore" label="" value="no text" text="filler text" />
+        </ui:VisualElement>
+        <ui:VisualElement name="warn-icon"/>
+    </ui:VisualElement>
+</ui:UXML>

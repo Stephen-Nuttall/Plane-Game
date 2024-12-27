@@ -1,0 +1,51 @@
+@import url("./icons.uss");
+#multiplayer-playmodestatus-button{
+    min-width: 100px;
+    max-width: 100px;
+    margin: 0px;
+    /* Have to use translate as margin gets overriden by ToolbarCommon.uss, which should not be the case */
+    translate: -1px 0px;
+}
+
+.unity-editor-toolbar-element__label{
+    -unity-text-align: middle-left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#deploy-progress{
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    height: 3px;
+    width: 50%;
+    opacity: 1;
+}
+
+.animate{
+    transition: width 0.2s ease-in-out;
+}
+
+/* processing (deploy, prepare, run phase)*/
+.processing #deploy-progress{
+    background-color: var(--unity-colors-button-background-hover_pressed);
+}
+
+.processing #icon{
+    visibility: visible;
+    background-image: var(--icon-loading);
+    rotate: 3600000deg;
+    transition-property: rotate;
+    transition-timing-function: linear;
+    transition-duration: 86400s;
+}
+
+/* error (failed) */
+.error #deploy-progress{
+    background-color: red;
+}
+
+.error #deploy-progress{
+    visibility: hidden;
+}

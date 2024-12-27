@@ -1,0 +1,29 @@
+:root {
+    --dropdown-width: 14px;
+}
+
+ToolbarView {
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+#MultiplayerPlayDropdown {
+    width: var(--dropdown-width);
+    min-width: var(--dropdown-width);
+    max-width: var(--dropdown-width);
+    height: 100%;
+    padding: 0;
+}
+
+#MultiplayerPlayDropdownn .unity-image {
+    width: var(--dropdown-width);
+    height: var(--dropdown-width);
+}
+
+#Progress {
+    background-color: var(--unity-colors-highlight-background);
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+}

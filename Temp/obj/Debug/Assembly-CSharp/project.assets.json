@@ -1,0 +1,1147 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "Unity.Cinemachine/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.InputSystem": "1.0.0",
+          "Unity.Mathematics": "1.0.0",
+          "Unity.Splines": "1.0.0",
+          "Unity.Timeline": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Cinemachine.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Cinemachine.dll": {}
+        }
+      },
+      "Unity.Cinemachine.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.Cinemachine": "1.0.0",
+          "Unity.InputSystem": "1.0.0",
+          "Unity.Mathematics": "1.0.0",
+          "Unity.Splines": "1.0.0",
+          "Unity.Splines.Editor": "1.0.0",
+          "Unity.Timeline": "1.0.0",
+          "Unity.Timeline.Editor": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Cinemachine.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Cinemachine.Editor.dll": {}
+        }
+      },
+      "Unity.EditorCoroutines.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.EditorCoroutines.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.EditorCoroutines.Editor.dll": {}
+        }
+      },
+      "Unity.InputSystem/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.InputSystem.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.InputSystem.dll": {}
+        }
+      },
+      "Unity.InputSystem.ForUI/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.InputSystem": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.InputSystem.ForUI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.InputSystem.ForUI.dll": {}
+        }
+      },
+      "Unity.Mathematics/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Mathematics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Mathematics.dll": {}
+        }
+      },
+      "Unity.Mathematics.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.Mathematics": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Mathematics.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Mathematics.Editor.dll": {}
+        }
+      },
+      "Unity.Multiplayer.Center.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Multiplayer.Center.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Multiplayer.Center.Common.dll": {}
+        }
+      },
+      "Unity.Multiplayer.Center.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.Multiplayer.Center.Common": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Multiplayer.Center.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Multiplayer.Center.Editor.dll": {}
+        }
+      },
+      "Unity.Multiplayer.Playmode/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.Multiplayer.Playmode.Common.Runtime": "1.0.0",
+          "Unity.Multiplayer.Playmode.VirtualProjects.Editor": "1.0.0",
+          "Unity.Multiplayer.Playmode.Workflow.Editor": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Multiplayer.Playmode.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Multiplayer.Playmode.dll": {}
+        }
+      },
+      "Unity.Multiplayer.Playmode.Common.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Multiplayer.Playmode.Common.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Multiplayer.Playmode.Common.Editor.dll": {}
+        }
+      },
+      "Unity.Multiplayer.Playmode.Common.Runtime/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Multiplayer.Playmode.Common.Runtime.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Multiplayer.Playmode.Common.Runtime.dll": {}
+        }
+      },
+      "Unity.Multiplayer.PlayMode.Configurations.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.Multiplayer.PlayMode.Editor.Bridge": "1.0.0",
+          "Unity.Multiplayer.Playmode.Common.Editor": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Multiplayer.PlayMode.Configurations.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Multiplayer.PlayMode.Configurations.Editor.dll": {}
+        }
+      },
+      "Unity.Multiplayer.PlayMode.Editor.Bridge/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Multiplayer.PlayMode.Editor.Bridge.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Multiplayer.PlayMode.Editor.Bridge.dll": {}
+        }
+      },
+      "Unity.Multiplayer.PlayMode.Scenarios.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.Multiplayer.PlayMode.Configurations.Editor": "1.0.0",
+          "Unity.Multiplayer.PlayMode.Editor.Bridge": "1.0.0",
+          "Unity.Multiplayer.Playmode.Common.Editor": "1.0.0",
+          "Unity.Multiplayer.Playmode.VirtualProjects.Editor": "1.0.0",
+          "Unity.Multiplayer.Playmode.Workflow.Editor": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Multiplayer.PlayMode.Scenarios.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Multiplayer.PlayMode.Scenarios.Editor.dll": {}
+        }
+      },
+      "Unity.Multiplayer.Playmode.VirtualProjects.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.Multiplayer.Playmode.Common.Editor": "1.0.0",
+          "Unity.Multiplayer.Playmode.Common.Runtime": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Multiplayer.Playmode.VirtualProjects.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Multiplayer.Playmode.VirtualProjects.Editor.dll": {}
+        }
+      },
+      "Unity.Multiplayer.Playmode.Workflow.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.Multiplayer.PlayMode.Editor.Bridge": "1.0.0",
+          "Unity.Multiplayer.Playmode.Common.Editor": "1.0.0",
+          "Unity.Multiplayer.Playmode.Common.Runtime": "1.0.0",
+          "Unity.Multiplayer.Playmode.VirtualProjects.Editor": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Multiplayer.Playmode.Workflow.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Multiplayer.Playmode.Workflow.Editor.dll": {}
+        }
+      },
+      "Unity.Performance.Profile-Analyzer.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Performance.Profile-Analyzer.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Performance.Profile-Analyzer.Editor.dll": {}
+        }
+      },
+      "Unity.PlasticSCM.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.PlasticSCM.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.PlasticSCM.Editor.dll": {}
+        }
+      },
+      "Unity.Rider.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Rider.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Rider.Editor.dll": {}
+        }
+      },
+      "Unity.Settings.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Settings.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Settings.Editor.dll": {}
+        }
+      },
+      "Unity.Splines/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.Mathematics": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Splines.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Splines.dll": {}
+        }
+      },
+      "Unity.Splines.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.Mathematics": "1.0.0",
+          "Unity.Settings.Editor": "1.0.0",
+          "Unity.Splines": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Splines.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Splines.Editor.dll": {}
+        }
+      },
+      "Unity.TestTools.CodeCoverage.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.Settings.Editor": "1.0.0",
+          "Unity.TestTools.CodeCoverage.Editor.OpenCover.Model": "1.0.0",
+          "Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.TestTools.CodeCoverage.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.TestTools.CodeCoverage.Editor.dll": {}
+        }
+      },
+      "Unity.TestTools.CodeCoverage.Editor.OpenCover.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll": {}
+        }
+      },
+      "Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll": {}
+        }
+      },
+      "Unity.TextMeshPro/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.TextMeshPro.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.TextMeshPro.dll": {}
+        }
+      },
+      "Unity.TextMeshPro.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.TextMeshPro": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.TextMeshPro.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.TextMeshPro.Editor.dll": {}
+        }
+      },
+      "Unity.Timeline/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Timeline.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Timeline.dll": {}
+        }
+      },
+      "Unity.Timeline.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.Timeline": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Timeline.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Timeline.Editor.dll": {}
+        }
+      },
+      "Unity.VisualScripting.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.InputSystem": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.VisualScripting.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.VisualScripting.Core.dll": {}
+        }
+      },
+      "Unity.VisualScripting.Core.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.VisualScripting.Core": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.VisualScripting.Core.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.VisualScripting.Core.Editor.dll": {}
+        }
+      },
+      "Unity.VisualScripting.Flow/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.InputSystem": "1.0.0",
+          "Unity.VisualScripting.Core": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.VisualScripting.Flow.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.VisualScripting.Flow.dll": {}
+        }
+      },
+      "Unity.VisualScripting.Flow.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.InputSystem": "1.0.0",
+          "Unity.VisualScripting.Core": "1.0.0",
+          "Unity.VisualScripting.Core.Editor": "1.0.0",
+          "Unity.VisualScripting.Flow": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.VisualScripting.Flow.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.VisualScripting.Flow.Editor.dll": {}
+        }
+      },
+      "Unity.VisualScripting.SettingsProvider.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.VisualScripting.Core": "1.0.0",
+          "Unity.VisualScripting.Core.Editor": "1.0.0",
+          "Unity.VisualScripting.Flow": "1.0.0",
+          "Unity.VisualScripting.Flow.Editor": "1.0.0",
+          "Unity.VisualScripting.State": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.VisualScripting.SettingsProvider.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.VisualScripting.SettingsProvider.Editor.dll": {}
+        }
+      },
+      "Unity.VisualScripting.Shared.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.VisualScripting.Core": "1.0.0",
+          "Unity.VisualScripting.Core.Editor": "1.0.0",
+          "Unity.VisualScripting.Flow": "1.0.0",
+          "Unity.VisualScripting.Flow.Editor": "1.0.0",
+          "Unity.VisualScripting.State": "1.0.0",
+          "Unity.VisualScripting.State.Editor": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.VisualScripting.Shared.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.VisualScripting.Shared.Editor.dll": {}
+        }
+      },
+      "Unity.VisualScripting.State/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.VisualScripting.Core": "1.0.0",
+          "Unity.VisualScripting.Flow": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.VisualScripting.State.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.VisualScripting.State.dll": {}
+        }
+      },
+      "Unity.VisualScripting.State.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.VisualScripting.Core": "1.0.0",
+          "Unity.VisualScripting.Core.Editor": "1.0.0",
+          "Unity.VisualScripting.Flow": "1.0.0",
+          "Unity.VisualScripting.Flow.Editor": "1.0.0",
+          "Unity.VisualScripting.State": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.VisualScripting.State.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.VisualScripting.State.Editor.dll": {}
+        }
+      },
+      "Unity.VisualStudio.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.VisualStudio.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.VisualStudio.Editor.dll": {}
+        }
+      },
+      "UnityEditor.TestRunner/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEngine.TestRunner": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UnityEditor.TestRunner.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnityEditor.TestRunner.dll": {}
+        }
+      },
+      "UnityEditor.UI/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UnityEditor.UI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnityEditor.UI.dll": {}
+        }
+      },
+      "UnityEngine.TestRunner/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/UnityEngine.TestRunner.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnityEngine.TestRunner.dll": {}
+        }
+      },
+      "UnityEngine.UI/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/UnityEngine.UI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnityEngine.UI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Unity.Cinemachine/1.0.0": {
+      "type": "project",
+      "path": "Unity.Cinemachine.csproj",
+      "msbuildProject": "Unity.Cinemachine.csproj"
+    },
+    "Unity.Cinemachine.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.Cinemachine.Editor.csproj",
+      "msbuildProject": "Unity.Cinemachine.Editor.csproj"
+    },
+    "Unity.EditorCoroutines.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.EditorCoroutines.Editor.csproj",
+      "msbuildProject": "Unity.EditorCoroutines.Editor.csproj"
+    },
+    "Unity.InputSystem/1.0.0": {
+      "type": "project",
+      "path": "Unity.InputSystem.csproj",
+      "msbuildProject": "Unity.InputSystem.csproj"
+    },
+    "Unity.InputSystem.ForUI/1.0.0": {
+      "type": "project",
+      "path": "Unity.InputSystem.ForUI.csproj",
+      "msbuildProject": "Unity.InputSystem.ForUI.csproj"
+    },
+    "Unity.Mathematics/1.0.0": {
+      "type": "project",
+      "path": "Unity.Mathematics.csproj",
+      "msbuildProject": "Unity.Mathematics.csproj"
+    },
+    "Unity.Mathematics.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.Mathematics.Editor.csproj",
+      "msbuildProject": "Unity.Mathematics.Editor.csproj"
+    },
+    "Unity.Multiplayer.Center.Common/1.0.0": {
+      "type": "project",
+      "path": "Unity.Multiplayer.Center.Common.csproj",
+      "msbuildProject": "Unity.Multiplayer.Center.Common.csproj"
+    },
+    "Unity.Multiplayer.Center.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.Multiplayer.Center.Editor.csproj",
+      "msbuildProject": "Unity.Multiplayer.Center.Editor.csproj"
+    },
+    "Unity.Multiplayer.Playmode/1.0.0": {
+      "type": "project",
+      "path": "Unity.Multiplayer.Playmode.csproj",
+      "msbuildProject": "Unity.Multiplayer.Playmode.csproj"
+    },
+    "Unity.Multiplayer.Playmode.Common.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.Multiplayer.Playmode.Common.Editor.csproj",
+      "msbuildProject": "Unity.Multiplayer.Playmode.Common.Editor.csproj"
+    },
+    "Unity.Multiplayer.Playmode.Common.Runtime/1.0.0": {
+      "type": "project",
+      "path": "Unity.Multiplayer.Playmode.Common.Runtime.csproj",
+      "msbuildProject": "Unity.Multiplayer.Playmode.Common.Runtime.csproj"
+    },
+    "Unity.Multiplayer.PlayMode.Configurations.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.Multiplayer.PlayMode.Configurations.Editor.csproj",
+      "msbuildProject": "Unity.Multiplayer.PlayMode.Configurations.Editor.csproj"
+    },
+    "Unity.Multiplayer.PlayMode.Editor.Bridge/1.0.0": {
+      "type": "project",
+      "path": "Unity.Multiplayer.PlayMode.Editor.Bridge.csproj",
+      "msbuildProject": "Unity.Multiplayer.PlayMode.Editor.Bridge.csproj"
+    },
+    "Unity.Multiplayer.PlayMode.Scenarios.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.Multiplayer.PlayMode.Scenarios.Editor.csproj",
+      "msbuildProject": "Unity.Multiplayer.PlayMode.Scenarios.Editor.csproj"
+    },
+    "Unity.Multiplayer.Playmode.VirtualProjects.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.Multiplayer.Playmode.VirtualProjects.Editor.csproj",
+      "msbuildProject": "Unity.Multiplayer.Playmode.VirtualProjects.Editor.csproj"
+    },
+    "Unity.Multiplayer.Playmode.Workflow.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.Multiplayer.Playmode.Workflow.Editor.csproj",
+      "msbuildProject": "Unity.Multiplayer.Playmode.Workflow.Editor.csproj"
+    },
+    "Unity.Performance.Profile-Analyzer.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.Performance.Profile-Analyzer.Editor.csproj",
+      "msbuildProject": "Unity.Performance.Profile-Analyzer.Editor.csproj"
+    },
+    "Unity.PlasticSCM.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.PlasticSCM.Editor.csproj",
+      "msbuildProject": "Unity.PlasticSCM.Editor.csproj"
+    },
+    "Unity.Rider.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.Rider.Editor.csproj",
+      "msbuildProject": "Unity.Rider.Editor.csproj"
+    },
+    "Unity.Settings.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.Settings.Editor.csproj",
+      "msbuildProject": "Unity.Settings.Editor.csproj"
+    },
+    "Unity.Splines/1.0.0": {
+      "type": "project",
+      "path": "Unity.Splines.csproj",
+      "msbuildProject": "Unity.Splines.csproj"
+    },
+    "Unity.Splines.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.Splines.Editor.csproj",
+      "msbuildProject": "Unity.Splines.Editor.csproj"
+    },
+    "Unity.TestTools.CodeCoverage.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.TestTools.CodeCoverage.Editor.csproj",
+      "msbuildProject": "Unity.TestTools.CodeCoverage.Editor.csproj"
+    },
+    "Unity.TestTools.CodeCoverage.Editor.OpenCover.Model/1.0.0": {
+      "type": "project",
+      "path": "Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj",
+      "msbuildProject": "Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj"
+    },
+    "Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection/1.0.0": {
+      "type": "project",
+      "path": "Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj",
+      "msbuildProject": "Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj"
+    },
+    "Unity.TextMeshPro/1.0.0": {
+      "type": "project",
+      "path": "Unity.TextMeshPro.csproj",
+      "msbuildProject": "Unity.TextMeshPro.csproj"
+    },
+    "Unity.TextMeshPro.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.TextMeshPro.Editor.csproj",
+      "msbuildProject": "Unity.TextMeshPro.Editor.csproj"
+    },
+    "Unity.Timeline/1.0.0": {
+      "type": "project",
+      "path": "Unity.Timeline.csproj",
+      "msbuildProject": "Unity.Timeline.csproj"
+    },
+    "Unity.Timeline.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.Timeline.Editor.csproj",
+      "msbuildProject": "Unity.Timeline.Editor.csproj"
+    },
+    "Unity.VisualScripting.Core/1.0.0": {
+      "type": "project",
+      "path": "Unity.VisualScripting.Core.csproj",
+      "msbuildProject": "Unity.VisualScripting.Core.csproj"
+    },
+    "Unity.VisualScripting.Core.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.VisualScripting.Core.Editor.csproj",
+      "msbuildProject": "Unity.VisualScripting.Core.Editor.csproj"
+    },
+    "Unity.VisualScripting.Flow/1.0.0": {
+      "type": "project",
+      "path": "Unity.VisualScripting.Flow.csproj",
+      "msbuildProject": "Unity.VisualScripting.Flow.csproj"
+    },
+    "Unity.VisualScripting.Flow.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.VisualScripting.Flow.Editor.csproj",
+      "msbuildProject": "Unity.VisualScripting.Flow.Editor.csproj"
+    },
+    "Unity.VisualScripting.SettingsProvider.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.VisualScripting.SettingsProvider.Editor.csproj",
+      "msbuildProject": "Unity.VisualScripting.SettingsProvider.Editor.csproj"
+    },
+    "Unity.VisualScripting.Shared.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.VisualScripting.Shared.Editor.csproj",
+      "msbuildProject": "Unity.VisualScripting.Shared.Editor.csproj"
+    },
+    "Unity.VisualScripting.State/1.0.0": {
+      "type": "project",
+      "path": "Unity.VisualScripting.State.csproj",
+      "msbuildProject": "Unity.VisualScripting.State.csproj"
+    },
+    "Unity.VisualScripting.State.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.VisualScripting.State.Editor.csproj",
+      "msbuildProject": "Unity.VisualScripting.State.Editor.csproj"
+    },
+    "Unity.VisualStudio.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.VisualStudio.Editor.csproj",
+      "msbuildProject": "Unity.VisualStudio.Editor.csproj"
+    },
+    "UnityEditor.TestRunner/1.0.0": {
+      "type": "project",
+      "path": "UnityEditor.TestRunner.csproj",
+      "msbuildProject": "UnityEditor.TestRunner.csproj"
+    },
+    "UnityEditor.UI/1.0.0": {
+      "type": "project",
+      "path": "UnityEditor.UI.csproj",
+      "msbuildProject": "UnityEditor.UI.csproj"
+    },
+    "UnityEngine.TestRunner/1.0.0": {
+      "type": "project",
+      "path": "UnityEngine.TestRunner.csproj",
+      "msbuildProject": "UnityEngine.TestRunner.csproj"
+    },
+    "UnityEngine.UI/1.0.0": {
+      "type": "project",
+      "path": "UnityEngine.UI.csproj",
+      "msbuildProject": "UnityEngine.UI.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "Unity.Cinemachine >= 1.0.0",
+      "Unity.Cinemachine.Editor >= 1.0.0",
+      "Unity.EditorCoroutines.Editor >= 1.0.0",
+      "Unity.InputSystem >= 1.0.0",
+      "Unity.InputSystem.ForUI >= 1.0.0",
+      "Unity.Mathematics >= 1.0.0",
+      "Unity.Mathematics.Editor >= 1.0.0",
+      "Unity.Multiplayer.Center.Common >= 1.0.0",
+      "Unity.Multiplayer.Center.Editor >= 1.0.0",
+      "Unity.Multiplayer.PlayMode.Configurations.Editor >= 1.0.0",
+      "Unity.Multiplayer.PlayMode.Editor.Bridge >= 1.0.0",
+      "Unity.Multiplayer.PlayMode.Scenarios.Editor >= 1.0.0",
+      "Unity.Multiplayer.Playmode >= 1.0.0",
+      "Unity.Performance.Profile-Analyzer.Editor >= 1.0.0",
+      "Unity.PlasticSCM.Editor >= 1.0.0",
+      "Unity.Rider.Editor >= 1.0.0",
+      "Unity.Splines >= 1.0.0",
+      "Unity.Splines.Editor >= 1.0.0",
+      "Unity.TestTools.CodeCoverage.Editor >= 1.0.0",
+      "Unity.TestTools.CodeCoverage.Editor.OpenCover.Model >= 1.0.0",
+      "Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection >= 1.0.0",
+      "Unity.TextMeshPro >= 1.0.0",
+      "Unity.TextMeshPro.Editor >= 1.0.0",
+      "Unity.Timeline >= 1.0.0",
+      "Unity.Timeline.Editor >= 1.0.0",
+      "Unity.VisualScripting.Core >= 1.0.0",
+      "Unity.VisualScripting.Core.Editor >= 1.0.0",
+      "Unity.VisualScripting.Flow >= 1.0.0",
+      "Unity.VisualScripting.Flow.Editor >= 1.0.0",
+      "Unity.VisualScripting.SettingsProvider.Editor >= 1.0.0",
+      "Unity.VisualScripting.Shared.Editor >= 1.0.0",
+      "Unity.VisualScripting.State >= 1.0.0",
+      "Unity.VisualScripting.State.Editor >= 1.0.0",
+      "Unity.VisualStudio.Editor >= 1.0.0",
+      "UnityEditor.UI >= 1.0.0",
+      "UnityEngine.UI >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\steph\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Assembly-CSharp.csproj",
+      "projectName": "Assembly-CSharp",
+      "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Assembly-CSharp.csproj",
+      "packagesPath": "C:\\Users\\steph\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Temp\\obj\\Debug\\Assembly-CSharp\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\steph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Cinemachine.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Cinemachine.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Cinemachine.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Cinemachine.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.EditorCoroutines.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.EditorCoroutines.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.InputSystem.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.InputSystem.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.InputSystem.ForUI.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.InputSystem.ForUI.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Mathematics.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Mathematics.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Mathematics.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Mathematics.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Multiplayer.Center.Common.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Multiplayer.Center.Common.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Multiplayer.Center.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Multiplayer.Center.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Multiplayer.PlayMode.Configurations.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Multiplayer.PlayMode.Configurations.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Multiplayer.Playmode.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Multiplayer.Playmode.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Multiplayer.PlayMode.Editor.Bridge.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Multiplayer.PlayMode.Editor.Bridge.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Multiplayer.PlayMode.Scenarios.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Multiplayer.PlayMode.Scenarios.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Performance.Profile-Analyzer.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Performance.Profile-Analyzer.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.PlasticSCM.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.PlasticSCM.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Rider.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Rider.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Splines.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Splines.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Splines.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Splines.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.TestTools.CodeCoverage.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.TestTools.CodeCoverage.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.TextMeshPro.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.TextMeshPro.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.TextMeshPro.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.TextMeshPro.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Timeline.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Timeline.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Timeline.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.Timeline.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.Core.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.Core.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.Core.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.Core.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.Flow.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.Flow.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.Flow.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.Flow.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.SettingsProvider.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.SettingsProvider.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.Shared.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.Shared.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.State.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.State.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.State.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualScripting.State.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualStudio.Editor.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\Unity.VisualStudio.Editor.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\UnityEditor.UI.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\UnityEditor.UI.csproj"
+            },
+            "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\UnityEngine.UI.csproj": {
+              "projectPath": "C:\\Users\\steph\\OneDrive\\Documents\\GitHub\\Plane-Game\\UnityEngine.UI.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

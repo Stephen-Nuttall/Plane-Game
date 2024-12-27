@@ -1,0 +1,25 @@
+{
+    "name": "Unity.Multiplayer.PlayMode.Editor.Bridge",
+    "rootNamespace": "Unity.Multiplayer.PlayMode.Editor.Bridge",
+    "references": [
+        "Unity.DedicatedServer.MultiplayerRoles",
+        "Unity.DedicatedServer.MultiplayerRoles.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "Unity",
+            "expression": "2023.2.0a2",
+            "define": "UNITY_HAS_PLAYER_SETTINGS_SECTION_ATTRIBUTE"
+        }
+    ],
+    "noEngineReferences": false
+}

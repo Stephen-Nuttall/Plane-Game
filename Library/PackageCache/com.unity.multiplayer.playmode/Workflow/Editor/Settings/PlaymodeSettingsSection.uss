@@ -1,0 +1,16 @@
+PlaymodeSettingsSection {
+    flex-grow: 20;
+    font-size: 11.5px;
+    margin: 6px;
+}
+
+#ScrollView {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 20;
+}
+
+.header {
+    -unity-font-style: bold;
+    padding: 0 0 4px 4px;
+}

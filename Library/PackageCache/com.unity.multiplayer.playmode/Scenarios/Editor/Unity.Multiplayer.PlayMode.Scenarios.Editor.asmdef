@@ -1,0 +1,42 @@
+{
+    "name": "Unity.Multiplayer.PlayMode.Scenarios.Editor",
+    "rootNamespace": "Unity.Multiplayer.PlayMode.Scenarios.Editor",
+    "references": [
+        "Unity.Multiplayer.PlayMode.Editor.Bridge",
+        "Unity.Multiplayer.PlayMode.Configurations.Editor",
+        "Unity.DedicatedServer.MultiplayerRoles",
+        "Unity.DedicatedServer.MultiplayerRoles.Editor",
+        "Unity.Services.Core.Environments.Editor",
+        "Unity.Services.Multiplayer.Multiplay.Authoring.Editor",
+        "Unity.Services.Multiplayer.Multiplay.Authoring.Core",
+        "Unity.Services.DeploymentApi",
+        "Unity.Multiplayer.Playmode.Workflow.Editor",
+        "Unity.Multiplayer.Playmode.Common.Editor",
+        "Unity.Multiplayer.Playmode.VirtualProjects.Editor",
+        "Unity.Services.Multiplayer.Editor.Shared"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "!DISABLE_DEDICATED_SERVER_EXPERIMENTAL"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.services.multiplayer",
+            "expression": "1.0.0-pre.1",
+            "define": "MULTIPLAY_API_AVAILABLE"
+        },
+        {
+            "name": "com.unity.dedicated-server",
+            "expression": "1.3.3",
+            "define": "UNITY_USE_MULTIPLAYER_ROLES"
+        }
+    ],
+    "noEngineReferences": false
+}

@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.unity.multiplayer.playmode/WorkflowUI/Editor/Views/MainView.uss?fileID=7433441132597879392&amp;guid=26c1118e7b5ac674db907fc0e46616b1&amp;type=3#MainView" />
+    <ui:HelpBox name="BuildErrorMessage" text="Cannot activate more players until all compilation errors are resolved." message-type="2" />
+    <ui:HelpBox name="NoMPPMMessage" text="MPPM is disabled in settings." message-type="2" />
+    <ui:ScrollView name="ScrollView">
+        <ui:Label text="Main Editor Player" display-tooltip-when-elided="true" class="header" />
+        <Unity.Multiplayer.Playmode.WorkflowUI.Editor.PlayersListView name="MainListView" />
+        <ui:VisualElement name="seperator" />
+        <ui:Label text="Virtual Players" name="VirtualPlayersLabel" display-tooltip-when-elided="true" class="header" />
+        <ui:Label text="Authoring capabilities are restricted for Virtual Players" name="ReadOnlyLabel" style="height: 26px; width: 344px;" />
+        <ui:HelpBox name="PlayerLaunchingHelpBox" text="Please refrain from modifying packages while the virtual player is activating. Making changes during this time can lead to conflicts or errors." message-type="2"  />
+        <Unity.Multiplayer.Playmode.WorkflowUI.Editor.PlayersListView name="VirtualListView" />
+    </ui:ScrollView>
+    <ui:HelpBox name="BuildErrorMessage2" text="MPPM works but is not fully supported on 2022LTS. Please visit https://docs-multiplayer.unity3d.com/tools/current/mppm/#requirements for more details." message-type="2" />
+</ui:UXML>

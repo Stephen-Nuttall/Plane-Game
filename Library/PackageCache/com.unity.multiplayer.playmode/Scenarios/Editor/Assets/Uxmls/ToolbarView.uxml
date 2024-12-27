@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements"
+         xmlns:uie="UnityEditor.UIElements"
+         xmlns:view="Unity.Multiplayer.PlayMode.Scenarios.Editor.Views"
+         editor-extension-mode="True">
+    <Style src="../Styles/Global.uss" />
+    <view:EditorToolbarButtonElement
+            name="MultiplayerPlay"
+            class="unity-editor-toolbar-element unity-editor-toolbar__button-strip-element unity-editor-toolbar__button-strip-element--left"
+            text="Multiplayer Play"
+            tooltip="Build, Deploy and Play Server and Client in one click"
+            icon="PlayButton@2x"
+    >
+        <ui:VisualElement name="Progress" />
+    </view:EditorToolbarButtonElement>
+    <view:EditorToolbarButtonElement
+            name="MultiplayerPlayDropdown"
+            class="unity-editor-toolbar-element unity-editor-toolbar__button-strip-element unity-editor-toolbar__button-strip-element--right"
+            tooltip="Configure Multiplayer Play"
+            icon="d_icon dropdown@2x"
+    />
+</ui:UXML>

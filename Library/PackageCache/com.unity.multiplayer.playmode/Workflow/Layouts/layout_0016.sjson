@@ -1,0 +1,8 @@
+restore_saved_layout = true
+top_view =                 { class_name = "TopView" size = 30 }
+view = {
+tabs = true
+            children = [
+                { class_name = "InspectorWindow" }
+            ]
+}

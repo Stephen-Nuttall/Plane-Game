@@ -1,0 +1,21 @@
+#stages-container
+{
+    flex-direction: row;
+}
+
+.stage-status
+{
+    margin: 5px;
+    padding: 5px;
+    border-width: 1px;
+    border-color: var(--unity-colors-inspector_titlebar-border_accent);
+}
+
+.node-status
+{
+    margin: 5px;
+    padding: 5px;
+    border-width: 1px;
+    border-color: var(--unity-colors-inspector_titlebar-border_accent);
+    background-color: var(--unity-colors-inspector_titlebar-background);
+}
