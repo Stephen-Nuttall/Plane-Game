@@ -3,60 +3,81 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] Rigidbody rb;
     [SerializeField] InputActionReference mouseX;
     [SerializeField] InputActionReference mouseY;
+    [SerializeField] InputActionReference airBreakKey;
+    [SerializeField] InputActionReference precisionModeKey;
+
+    [SerializeField] Rigidbody rb;
     [SerializeField] float moveSpeed;
+
     [SerializeField] Vector2 mouseSensitivity;
+    [SerializeField] Vector2 precisionModeSensitivity;
     [SerializeField] Vector2 maxTurnSpeed;
     [SerializeField] bool invertX = false;
     [SerializeField] bool invertY = false;
 
     Vector2 mouseMovement;
 
+    // Determine the amount the plane should rotate based on the user's mouse movement.
     void Update()
     {
-        // X and Y actually translate to pitch and yaw, and thus up/down and left/right instead of the expected vise versa.
-        float verticalInput = mouseX.action.ReadValue<float>();
-        float horizontalInput = mouseY.action.ReadValue<float>();
+        // get horizontal and vertical input from mouse movement
+        float horizontalInput = mouseX.action.ReadValue<float>();
+        float verticalInput = mouseY.action.ReadValue<float>();
 
-        // check that we're not turning too much
-        if (verticalInput > maxTurnSpeed.x)
+        // check that we're not turning too much horizontally
+        if (horizontalInput > maxTurnSpeed.x)
         {
-            verticalInput = maxTurnSpeed.x;
+            horizontalInput = maxTurnSpeed.x;
         }
-        else if (verticalInput < -maxTurnSpeed.x)
+        else if (horizontalInput < -maxTurnSpeed.x)
         {
-            verticalInput = -maxTurnSpeed.x;
-        }
-
-        if (horizontalInput > maxTurnSpeed.y)
-        {
-            horizontalInput = maxTurnSpeed.y;
-        }
-        else if (horizontalInput < -maxTurnSpeed.y)
-        {
-            horizontalInput = -maxTurnSpeed.y;
+            horizontalInput = -maxTurnSpeed.x;
         }
 
-        // X and Y have the intuitive meaning here, where X is left/right and Y is up/down.
+        // check that we're not turning too much vertically
+        if (verticalInput > maxTurnSpeed.y)
+        {
+            verticalInput = maxTurnSpeed.y;
+        }
+        else if (verticalInput < -maxTurnSpeed.y)
+        {
+            verticalInput = -maxTurnSpeed.y;
+        }
+
+        // invert X if the user wants to
         if (invertX)
         {
             horizontalInput = -horizontalInput;
         }
 
-        if (invertY)
+        // invert Y if the user wants to
+        if (!invertY)
         {
             verticalInput = -verticalInput;
         }
 
-        // determine rotation amount
-        mouseMovement = new Vector2(horizontalInput * mouseSensitivity.y, verticalInput * mouseSensitivity.x);
+        // Determine rotation amount. Use precision mode sensitivity if the precision mode key is currently being held.
+        // Note: X in rotation is pitch and Y in rotation is yaw, so counterintuitively, our vector should be (verticalInput, horizontalInput)
+        if (precisionModeKey.action.inProgress)
+        {
+            mouseMovement = new Vector2(verticalInput * precisionModeSensitivity.y, horizontalInput * precisionModeSensitivity.x);
+        }
+        else
+        {
+            mouseMovement = new Vector2(verticalInput * mouseSensitivity.y, horizontalInput * mouseSensitivity.x);
+        }
     }
 
+    // Rotate the plane based on the calculations in Update() and push the plane in the direction it's facing (if the airbreak is not enabled)
     void FixedUpdate()
     {
         transform.Rotate(mouseMovement.x, mouseMovement.y, 0);
-        rb.linearVelocity = transform.forward * moveSpeed;
+
+        if (!airBreakKey.action.inProgress)
+        {
+            rb.linearVelocity = transform.forward * moveSpeed;
+        }
     }
 }
