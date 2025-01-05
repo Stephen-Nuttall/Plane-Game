@@ -5,16 +5,18 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] InputActionReference mouseX;
     [SerializeField] InputActionReference mouseY;
+    [SerializeField] InputActionReference tiltLeftKey;
+    [SerializeField] InputActionReference tiltRightKey;
     [SerializeField] InputActionReference airBreakKey;
     [SerializeField] InputActionReference precisionModeKey;
 
     [SerializeField] Rigidbody rb;
     [SerializeField] float moveSpeed;
-    [SerializeField] float rollCorrectionRate = 3f;
 
     [SerializeField] Vector2 mouseSensitivity;
     [SerializeField] Vector2 precisionModeSensitivity;
     [SerializeField] Vector2 maxTurnSpeed;
+    [SerializeField] float tiltSpeed = 3f;
     [SerializeField] bool invertX = false;
     [SerializeField] bool invertY = false;
     Vector2 mouseMovement;
@@ -82,16 +84,18 @@ public class PlayerMovement : MonoBehaviour
     // Rotate the plane based on the calculations in Update() and either push the plane in the direction it's facing or glide if airbreak key is held
     void FixedUpdate()
     {
-        float roll = 0;
-        // if (transform.rotation.z > rollCorrectionRate)
-        // {
-        //     roll -= rollCorrectionRate;
-        // }
-        // else if (transform.rotation.z < -rollCorrectionRate)
-        // {
-        //     roll += rollCorrectionRate;
-        // }
-        transform.Rotate(mouseMovement.x, mouseMovement.y, roll);
+        // Record tilt input
+        float tiltMovement = 0;
+        if (tiltLeftKey.action.inProgress)
+        {
+            tiltMovement += tiltSpeed;
+        }
+        if (tiltRightKey.action.inProgress)
+        {
+            tiltMovement -= tiltSpeed;
+        }
+
+        transform.Rotate(mouseMovement.x, mouseMovement.y, tiltMovement);
 
         if (!airBreakKey.action.inProgress)
         {

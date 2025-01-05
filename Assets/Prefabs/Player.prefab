@@ -416,6 +416,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseX: {fileID: -8487122889661291254, guid: 226fbba37f8f4434da658bc78a6a40fb, type: 3}
   mouseY: {fileID: 1962521030302113533, guid: 226fbba37f8f4434da658bc78a6a40fb, type: 3}
+  tiltLeftKey: {fileID: -4031089447286190879, guid: 226fbba37f8f4434da658bc78a6a40fb, type: 3}
+  tiltRightKey: {fileID: -8939559192524386961, guid: 226fbba37f8f4434da658bc78a6a40fb, type: 3}
   airBreakKey: {fileID: 7037354181321839065, guid: 226fbba37f8f4434da658bc78a6a40fb, type: 3}
   precisionModeKey: {fileID: 6612104634990390712, guid: 226fbba37f8f4434da658bc78a6a40fb, type: 3}
   rb: {fileID: 1242856438554248274}
@@ -423,9 +425,10 @@ MonoBehaviour:
   mouseSensitivity: {x: 0.5, y: 0.5}
   precisionModeSensitivity: {x: 0.06, y: 0.06}
   maxTurnSpeed: {x: 10, y: 10}
+  tiltSpeed: 3
   invertX: 0
   invertY: 0
-  minThrustSpeed: 3
+  minThrustSpeed: 0.3
   maxThrustSpeed: 125
   thrustFactor: 80
   dragFactor: 1
