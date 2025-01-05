@@ -16,8 +16,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Vector2 maxTurnSpeed;
     [SerializeField] bool invertX = false;
     [SerializeField] bool invertY = false;
-
     Vector2 mouseMovement;
+
+    [SerializeField] float minThrustSpeed;
+    [SerializeField] float maxThrustSpeed;
+    [SerializeField] float thrustFactor;
+    [SerializeField] float dragFactor;
+    [SerializeField] float minDrag;
+    [SerializeField] float lowGlidePercent = 0.1f;
+    [SerializeField] float highGlidePercent = 1f;
+    float currentGlideThrust = 0;
 
     // Determine the amount the plane should rotate based on the user's mouse movement.
     void Update()
@@ -70,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // Rotate the plane based on the calculations in Update() and push the plane in the direction it's facing (if the airbreak is not enabled)
+    // Rotate the plane based on the calculations in Update() and either push the plane in the direction it's facing or glide if airbreak key is held
     void FixedUpdate()
     {
         transform.Rotate(mouseMovement.x, mouseMovement.y, 0);
@@ -78,6 +86,33 @@ public class PlayerMovement : MonoBehaviour
         if (!airBreakKey.action.inProgress)
         {
             rb.linearVelocity = transform.forward * moveSpeed;
+        }
+        else
+        {
+            Glide();
+        }
+    }
+
+    // SOURCE: https://github.com/SOMENULL/Gliding-Project/blob/main/Gliding%20%5BTutorial%5D/Assets/Scripts/GlidingSystem.cs
+    void Glide()
+    {
+        float pitchInDeg = transform.eulerAngles.x % 360;
+        float pitchInRads = transform.eulerAngles.x * Mathf.Deg2Rad;
+        float mappedPitch = -Mathf.Sin(pitchInRads);
+        float offsetMappedPitch = Mathf.Sin(pitchInRads) * dragFactor;
+        float accelerationPercent = pitchInDeg >= 300f ? lowGlidePercent : highGlidePercent;
+        Vector3 glidingForce = -Vector3.forward * currentGlideThrust;
+
+        currentGlideThrust += mappedPitch * accelerationPercent * thrustFactor * Time.deltaTime;
+
+        if (rb.linearVelocity.magnitude >= minThrustSpeed)
+        {
+            rb.AddRelativeForce(glidingForce);
+            rb.linearDamping = Mathf.Clamp(offsetMappedPitch, minDrag, dragFactor);
+        }
+        else
+        {
+            currentGlideThrust = 0;
         }
     }
 }
