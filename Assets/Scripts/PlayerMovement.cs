@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] Rigidbody rb;
     [SerializeField] float moveSpeed;
+    [SerializeField] float rollCorrectionRate = 3f;
 
     [SerializeField] Vector2 mouseSensitivity;
     [SerializeField] Vector2 precisionModeSensitivity;
@@ -81,7 +82,16 @@ public class PlayerMovement : MonoBehaviour
     // Rotate the plane based on the calculations in Update() and either push the plane in the direction it's facing or glide if airbreak key is held
     void FixedUpdate()
     {
-        transform.Rotate(mouseMovement.x, mouseMovement.y, 0);
+        float roll = 0;
+        // if (transform.rotation.z > rollCorrectionRate)
+        // {
+        //     roll -= rollCorrectionRate;
+        // }
+        // else if (transform.rotation.z < -rollCorrectionRate)
+        // {
+        //     roll += rollCorrectionRate;
+        // }
+        transform.Rotate(mouseMovement.x, mouseMovement.y, roll);
 
         if (!airBreakKey.action.inProgress)
         {
@@ -99,11 +109,12 @@ public class PlayerMovement : MonoBehaviour
         float pitchInDeg = transform.eulerAngles.x % 360;
         float pitchInRads = transform.eulerAngles.x * Mathf.Deg2Rad;
         float mappedPitch = -Mathf.Sin(pitchInRads);
-        float offsetMappedPitch = Mathf.Sin(pitchInRads) * dragFactor;
+        float offsetMappedPitch = Mathf.Cos(pitchInRads) * dragFactor;
         float accelerationPercent = pitchInDeg >= 300f ? lowGlidePercent : highGlidePercent;
         Vector3 glidingForce = -Vector3.forward * currentGlideThrust;
 
-        currentGlideThrust += mappedPitch * accelerationPercent * thrustFactor * Time.deltaTime;
+        currentGlideThrust += mappedPitch * accelerationPercent * thrustFactor;
+        currentGlideThrust = Mathf.Clamp(currentGlideThrust, -maxThrustSpeed, 0);
 
         if (rb.linearVelocity.magnitude >= minThrustSpeed)
         {

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Free Island Collection/Scenes/Scene 1.unity
+- path: Assets/Scenes/Island Test Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
