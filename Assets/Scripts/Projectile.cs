@@ -20,6 +20,11 @@ public class Projectile : MonoBehaviour
         rb.MovePosition(rb.position + transform.forward * moveSpeed);
     }
 
+    void OnCollisionEnter(Collision col)
+    {
+        Destroy(gameObject);
+    }
+
     IEnumerator DespawnTimer()
     {
         yield return new WaitForSeconds(lifeTime);
