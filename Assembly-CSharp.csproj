@@ -66,10 +66,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\LockCursor.cs" />
+    <Compile Include="Assets\Scripts\PackageSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\BalloonHitbox.cs" />
+    <Compile Include="Assets\Scripts\BalloonPackage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMPro.cginc" />
