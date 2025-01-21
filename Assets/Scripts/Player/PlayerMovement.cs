@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Input References")]
     [SerializeField] InputActionReference mouseX;
     [SerializeField] InputActionReference mouseY;
     [SerializeField] InputActionReference tiltLeftKey;
@@ -10,9 +11,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] InputActionReference airBreakKey;
     [SerializeField] InputActionReference precisionModeKey;
 
+    [Header("Basic Forward Movement")]
     [SerializeField] Rigidbody rb;
     [SerializeField] float moveSpeed;
 
+    [Header("Steering With Mouse")]
     [SerializeField] Vector2 mouseSensitivity;
     [SerializeField] Vector2 precisionModeSensitivity;
     [SerializeField] Vector2 maxTurnSpeed;
@@ -21,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] bool invertY = false;
     Vector2 mouseMovement;
 
+    [Header("Gliding")]
+    [SerializeField] GameObject PropellerBlurred;
+    [SerializeField] GameObject PropellerUnblurred;
     [SerializeField] float minThrustSpeed;
     [SerializeField] float maxThrustSpeed;
     [SerializeField] float thrustFactor;
@@ -79,6 +85,18 @@ public class PlayerMovement : MonoBehaviour
         {
             mouseMovement = new Vector2(verticalInput * mouseSensitivity.y, horizontalInput * mouseSensitivity.x);
         }
+
+        // Show blurred propeller if not gliding. Else, show unblurred propeller.
+        if (!airBreakKey.action.inProgress)
+        {
+            PropellerBlurred.SetActive(true);
+            PropellerUnblurred.SetActive(false);
+        }
+        else
+        {
+            PropellerBlurred.SetActive(false);
+            PropellerUnblurred.SetActive(true);
+        }
     }
 
     // Rotate the plane based on the calculations in Update() and either push the plane in the direction it's facing or glide if airbreak key is held
@@ -97,6 +115,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Rotate(mouseMovement.x, mouseMovement.y, tiltMovement);
 
+        // if airbreak isn't held, push the plane forward. If it is held, glide.
         if (!airBreakKey.action.inProgress)
         {
             rb.linearVelocity = transform.forward * moveSpeed;
@@ -107,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // SOURCE: https://github.com/SOMENULL/Gliding-Project/blob/main/Gliding%20%5BTutorial%5D/Assets/Scripts/GlidingSystem.cs
+    // CREDIT: https://github.com/SOMENULL/Gliding-Project/blob/main/Gliding%20%5BTutorial%5D/Assets/Scripts/GlidingSystem.cs
     void Glide()
     {
         float pitchInDeg = transform.eulerAngles.x % 360;

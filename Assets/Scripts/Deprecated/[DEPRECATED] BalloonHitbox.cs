@@ -1,22 +1,19 @@
 using UnityEngine;
 using TMPro;
 
+[System.Obsolete("Replaced by Hitbox, PlayerHealth, and PlayerBalloonSize.")]
 public class BalloonHitbox : MonoBehaviour
 {
     [SerializeField] TMP_Text balloonCountText;
-    [SerializeField] Rigidbody rb;
     [SerializeField] GameObject ignoreCollision;
     [SerializeField] string ignoreCollisionTag = "Doesn't Pop Balloons";
 
-    [SerializeField] int balloonsLeft = 1;
+    [SerializeField] int balloonsLeft = 10;
     [SerializeField] int maxBalloons = 30;
-    [SerializeField] bool showBalloonText = false;
+    [SerializeField] bool showBalloonText = true;
 
     [SerializeField] float minSize = 5;
     [SerializeField] float sizeIncrement = 1;
-
-    [SerializeField] bool moveForward = false;  // for testing only
-    [SerializeField] float moveSpeed;
 
     void Start()
     {
@@ -44,14 +41,6 @@ public class BalloonHitbox : MonoBehaviour
 
         float newScaleVal = minSize + sizeIncrement * balloonsLeft;
         transform.localScale = new Vector3(newScaleVal, newScaleVal, newScaleVal);
-    }
-
-    void FixedUpdate()
-    {
-        if (moveForward)
-        {
-            rb.MovePosition(rb.position + transform.forward * moveSpeed);
-        }
     }
 
     public void AddBalloons(int amount)

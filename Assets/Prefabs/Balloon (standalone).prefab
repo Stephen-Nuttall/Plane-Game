@@ -191,8 +191,8 @@ GameObject:
   - component: {fileID: 6455718273895773855}
   - component: {fileID: 6866676109610046824}
   m_Layer: 0
-  m_Name: Balloon
-  m_TagString: Untagged
+  m_Name: Balloon (standalone)
+  m_TagString: Doesn't Pop Balloons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -327,11 +327,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   balloonCountText: {fileID: 3676298697059318171}
-  rb: {fileID: -3241864518980887290}
   ignoreCollision: {fileID: 0}
+  ignoreCollisionTag: Doesn't Pop Balloons
   balloonsLeft: 1
+  maxBalloons: 30
+  showBalloonText: 0
   minSize: 10
   sizeIncrement: 0.1
-  showBalloonText: 0
-  moveForward: 0
-  moveSpeed: 0

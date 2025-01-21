@@ -6,9 +6,9 @@ public class BalloonPackage : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.TryGetComponent<BalloonHitbox>(out var balloon))
+        if (col.TryGetComponent<PlayerHealth>(out var health))
         {
-            balloon.AddBalloons(amountToAdd);
+            health.AddBalloons(amountToAdd);
             gameObject.SetActive(false);
         }
     }

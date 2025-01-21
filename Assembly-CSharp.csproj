@@ -67,11 +67,14 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\LockCursor.cs" />
     <Compile Include="Assets\Scripts\PackageSpawner.cs" />
-    <Compile Include="Assets\Scripts\PlayerAttack.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\Player\BalloonResize.cs" />
+    <Compile Include="Assets\Scripts\Hitbox.cs" />
+    <Compile Include="Assets\Scripts\Deprecated\[DEPRECATED] BalloonHitbox.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
-    <Compile Include="Assets\Scripts\BalloonHitbox.cs" />
     <Compile Include="Assets\Scripts\BalloonPackage.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMPro.cginc" />
